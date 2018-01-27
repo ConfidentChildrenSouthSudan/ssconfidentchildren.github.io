@@ -1,0 +1,17 @@
+# Admin Settings
+admin_name: 'Information Manager'
+admin_email: 'infomgr@southsudanngoforum.org '
+
+# Site settings
+slogan: Raising awareness of the plight of vulnerable children in South Sudan is imperative for change
+email: support@southsudanngoforum.org
+keywords: "Confident Children out of Conflict, CCC, Children, South Sudan, Confident Children, Conflict"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 303030 #18bc9c #80B3FF
+  secondary: 6C4D80 #FD6E8A
+  secondary-dark: 303030 #A2122F
+
+# Postal address (add as many lines as necessary)
+address: Concern Worldwide Offices Airport Road, Opp. Ebony International Bank, Juba, South Sudan

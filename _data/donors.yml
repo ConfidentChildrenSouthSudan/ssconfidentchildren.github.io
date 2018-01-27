@@ -1,0 +1,17 @@
+- name: "Unicef"
+  logo: "unicef.gif"
+
+- name: "CHF"
+  logo: "chf.gif"
+
+- name: "Canada"
+  logo: "canada.jpg"
+
+- name: "Australian Aid"
+  logo: "australian-aid.jpg"
+
+- name: "ECHO"
+  logo: "eu.jpg"
+
+- name: "Cordaid"
+  logo: "cordaid.jpg"

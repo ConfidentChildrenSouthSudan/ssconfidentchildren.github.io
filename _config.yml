@@ -1,0 +1,60 @@
+# Where things are
+source:      .
+destination: ./_site
+plugins_dir:     ./_plugins
+layouts_dir:     ./_layouts
+data_dir: ./_data
+pages_dir: ./_pages
+# collections: null
+# 
+# Handling Reading
+safe:         false
+include:      [".htaccess", "_pages"]
+
+exclude:      []
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      true
+unpublished: false
+
+# Plugins
+whitelist: []
+plugins:      
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-admin
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: ""
+
+mode: development
+
+dev_url: http://localhost:4000
+# url: http://southsudanngoforum.org
+url: http://localhost:4000
+
+title: Confident Children out of Conflict South Sudan
+description: "Striving for a safe and just environment for most vulnerable South Sudanese children, youth and women."
+
+# Outputting
+permalink:     /:title.html
+paginate: 10
+paginate_path: /page:num
+timezone:      null
+
+quiet:    false
+defaults: []
+
+markdown: kramdown
+permalink: pretty
+
+# Credits content
+credits: 'test'

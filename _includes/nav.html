@@ -1,0 +1,18 @@
+{% assign navurl = page.url | remove: 'index.html' %}
+<ul class="{% if include.isdropdown %} abs-menu {%else%} list-inline main-menu {% endif %}">
+{% for link in include.nav %}
+	<li class="{% if page.url == link.url %}active {% endif %}{% if link.subitems %} submenu {% endif %}">
+		{% if link.url contains 'http://' %}
+			{% assign pageurl = link.url %}
+		{% elsif link.subitems %}
+			{% assign pageurl = "javascript:void(0)" %}
+		{% else %}
+			{% assign pageurl =  link.url | prepend:site.data.global.url %}
+		{% endif %}
+		<a href="{{ pageurl }}">{{ link.text }}</a>
+    	{% if include.children and link.subitems %}
+    		{% include nav.html nav=link.subitems isdropdown=true %}
+    	{% endif %}
+    </li>
+{% endfor %}
+</ul>

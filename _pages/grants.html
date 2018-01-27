@@ -1,0 +1,33 @@
+---
+title: Previous / Closed Grants 
+layout: default
+slogan: 
+permalink: "/about/grants-funding-history/"
+---
+
+<div class="container white-bx-bg">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<!-- start of timeline -->
+			<ul class="timeline list-unstyled mar-b-md">
+				{% for grants in site.data.grants %}
+				<li>
+					<span class="year">{{ grants.year }}</span>
+					{% assign i = 1 %}
+					{% for grant in grants.details %}
+						{%  assign i = i | plus: 1 %}
+						{% assign odd = i | modulo:2 %}
+						<div class="box{% if odd == 0 %} left{% endif %}">
+							<time class="time">{{ grants.year }}</time>
+							<span class="dot"></span>
+							<ul class="list-unstyled">
+								<li>{{ grant.description }}</li>
+							</ul>
+						</div>
+					{% endfor %}
+				</li>
+				{% endfor %}
+			</ul><!-- end of timeline -->
+		</div>
+	</div>
+</div>

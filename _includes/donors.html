@@ -1,0 +1,5 @@
+<div class="owl-carousel our-partners" id="our-partners">
+	{% for donor in site.data.donors %}
+	<div class="partners-logo"> <img src="assets/img/donors/{{ donor.logo }}" alt="{{ donor.name }}"> </div>
+	{% endfor %}
+</div>

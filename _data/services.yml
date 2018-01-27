@@ -1,0 +1,27 @@
+- name: "Child Protection"
+  description: "40 children have residential care at our Juba-based care centre"
+  icon: "icon_01.png"
+
+- name: "Psychosocial Support"
+  description: "At the CFS in the community we provide psychological first aid for children"
+  icon: "icon_02.png"
+
+- name: "Livelihoods"
+  description: "We provide livelihoods support such as our Kitchen Garden project for communities to learn how to grow and maintain crops"
+  icon: "icon_03.png"
+  
+- name: "Education"
+  description: "We fundraise yearly for the tuition fees for 600 children in the community"
+  icon: "icon_03.png"
+
+- name: "Advocacy"
+  description: "We actively advocate for justice for children in South Sudan, against abuse, neglect, exploitation and gender-based and sexual violence"
+  icon: "icon_06.png"
+
+- name: "Health"
+  description: "We provide vulnerable families with financial support for their children if they are unwell"
+  icon: "icon_07.png"
+
+- name: "GENDER-BASED VIOLENCE (GBV)"
+  description: "We identify cases of GBV and refer them to the relevant authorities and provide protection at the centre if required"
+  icon: "icon_04.png"

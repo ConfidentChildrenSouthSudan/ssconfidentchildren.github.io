@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="{{ site.url }}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="Keywords" content="{{ site.data.global.keywords }}">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.url }}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+     <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/fav-icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/fav-icon/favicon-16x16.png" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/animate/animate.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="hero-banner-wrapper"> 
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="logo pull-left">
+                            <a href="{{ site.url }}"><img class="img-responsive" src="assets/img/confident-children-logo.png" alt="{{ site.title }}"></a>
+                        </div>
+                        <div class="addtocart-and-mobile  pull-right">
+                            <ul class="list-inline">
+                                <li> <a href="#"><img src="assets/icons/icon_13.png" alt="donate"></a></li>
+                            </ul>
+                        </div>
+                        <nav class="navbar pull-right">
+                            <div class="navbar-collapse-wrp">
+                                {% include nav.html nav=site.data.nav.main children=true %}
+                            </div>
+                        </nav>
+                        <button type="button" class="navbar-toggle"> <span class="icon-bar">&nbsp;</span> <span class="icon-bar">&nbsp;</span> <span class="icon-bar">&nbsp;</span> </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        {% if page.url == "/" %}
+           {% include frontpage-header.html %}
+        {% else %}
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="heading42">{{ page.title }}</h1>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if page.url == "/" %}
+            {% include frontpage-content.html %}
+        {% else %}
+            {{ content }}
+        {% endif %}
+
+        <!-- LET'S START -->
+        <div class="yellow-bg-wrapper pad22">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12"> <span class="volunter">LET'S START DOING YOUR BIT FOR CCC. JOIN US AS A VOLUNTEER</span> <a href="#" class="global-btn">BECOME A VOLUNTEER</a> </div>
+                </div>
+            </div>
+        </div>
+        <!-- LET'S START end --> 
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 col-xs-12"> <a href="index.html" style=" height:40px"> <img src="assets/img/confident-children-logo.png" alt="" > </a>
+                           <p>Raising awareness of the plight of vulnerable children in South Sudan is imperative for change.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <h3>Follow</h3>
+                            <ul class="socials list-inline">
+                                <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                                <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                                <li> <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a> </li>
+                                <li> <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
+                                <li> <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom black-bg-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7 col-xs-12">
+                            <ul class="list-inline">
+                                <li> <a href="disclaimer.html"> Disclaimer </a> </li>
+                                <li> <a href="privacy-policy.html"> Privacy Policy </a> </li>
+                                <li> <a href="refund-policy.html">Refund Policy</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 col-xs-12 copyright">
+                            &copy; Copyright {{ 'now' | date: "%Y" }} {{ site.title }} <span class="dspblock"> All rights Reserved</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+    <!-- jQuery --> 
+    <script src="assets/js/jquery-1.12.4.min.js"></script> 
+    <script src="assets/js/bootstrap.min.js"></script> 
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/animate/wow.js"></script> 
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>

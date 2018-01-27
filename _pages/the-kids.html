@@ -1,0 +1,51 @@
+---
+layout: default
+title: The Kids
+slogan: 
+permalink: /about/the-kids/
+---
+<div class="container white-bx-bg">
+	<div class="row pad62-bottom">
+		<div class="col-md-9 col-sm-12 col-xs-12">
+			<p>South Sudan, as the newest country (2011), also ranks as the "most vulnerable.
+			One of the most graphic examples of this need is the number of boys and girls living on the streets and in slums, cemeteries, markets, and "rakubas" (broken shacks made of materials salvaged from trash heaps). Girls, in particular, become targets for child trafficking. In a new country struggling to create infrastructure and social justice systems, the role of nonprofit humanitarian projects is essential.</p>
+
+			<p>CCC began as a drop-in center operating from one house. Today, there is a residential center, playground and area for meals accommodating up to 84 children. Dormitory rooms are decorated with stuffed toys, books and linens to feel comfortable and safe. Depending on donor contributions, to send children to school by paying for fees, books, uniforms, materials, and oversight. Annually, CCC provides up to 600 children with various forms of support that:</p>
+			<ul>
+				<li>HOUSE orphans and at-risk children in a clean, joyful residential center</li>
+				<li>EDUCATE children through school scholarships and extracurricular programs</li>
+				<li>REUNIFY children with families when it is safe to do so</li>
+				<li>FACILITATE youth, women and community-level discussions and training on gender-based violence, HIV, healthy living, vocational skills, and small business development.</li>
+			</ul>
+
+			<div class="row">
+			{% assign i = 1 %}
+			{% for kids in site.data.kids %}
+				{% assign odd = i | modulo:2 %}
+				<div class="col-sm-3 col-xs-12 custome-mar49-bottom wow">
+					<article class="article-causes"> 
+						<div class="img-zoom-effect"> <img src="assets/img/kids/{{ kids.photo }}" alt="{{ kids.name }}"/></div>
+						<div class="center-box">
+							<!-- <h4>{{ kids.name }}</h4> -->
+							<strong>{{ kids.description }}</strong>
+							<!-- <div class="pad22"> <a href="#" class="small-global-btn">Donate</a> </div> -->
+						</div>
+					</article>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<aside class="aside-left">
+				<div class="work-with-us">
+					<h2 class="heading24">Work with us</h2>
+					<ul>
+						<li><a href="/about/">About us</a></li>
+						<li><a href="/about/partners/">Partners</a></li>
+						<li><a href="/about/grants-funding-history/">previous / closed grants</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>

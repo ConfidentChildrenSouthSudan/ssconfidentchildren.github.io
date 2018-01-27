@@ -1,0 +1,89 @@
+<!-- View Causes -->
+<div class="container white-bx-bg">
+	<div class="row">
+		<div class="col-sm-4 col-xs-12">
+			<div class="hope-crushed">
+				<div class="crushed-animation-effect">
+					<div class="hope-crushed-text">
+						<h3>Our Activities</h3>
+						<p>We provide up to 40 children at any one time in Juba with residential care: a safe place to play, sleep, eat and learn.</p>
+						<a href="/what-we-do/">View Activies</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="hope-crushed">
+				<div class="crushed-animation-effect">
+					<div class="hope-crushed-text">
+						<h3>Cuases/Events</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur elit aenean vestibulum risus risus.</p>
+						<a href="/causes-events/">View Causes</a> 
+					</div> 
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="hope-crushed">
+				<div class="crushed-animation-effect">
+					<div class="hope-crushed-text">
+						<h3>Partner With Us</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur elit aenean vestibulum risus risus.</p>
+						<a href="/get-involved/">Get invoived</a> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- View Causes end --> 
+
+<section class="white-bg-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<div class="heading-group">
+					<h2>40+ Kids</h2>
+					<h3>been supported</h3>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<p> In 2007, on a daily basis Cathy was confronted with the heart-breaking scene of young girls and boys wandering the streets alone in Juba where she worked. These children, known as street children as they live and also usually work on the streets, often live in slums, the cemetery, or in the markets. They live out of ‘rakubas’ or tin shacks made out of salvaged materials from the rubbish dumps. Often they are in conflict with the law, and are imprisoned under degrading conditions. Some of the children live with their parents or extended family; many do not have any family and or are at the hands of abusers, often also subjected to domestic violence. </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="list-inline cause-list pad42-top">
+				{% assign i = 0 %}
+				{% for service in site.data.services %}
+					{%  assign i = i | plus: 1 %}
+					{% if i < 7 %}
+					<li>
+						<div class="icon-holder dsp-flex"> <img alt="" src="assets/icons/{{ service.icon }}"> </div>
+						<label>{{ service.name }}</label>
+					</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+				<div class="text-center pad22-top pad52-bottom"> <a href="#" class="global-btn">EXPLORE ALL CAUSES</a> </div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- raised Cause end--> 
+
+<!-- Our Partners -->
+<section class="dark-bg-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<h4 class="pad22"><strong>Our TRUSTED <br />
+				SUPPORTING PARTNERS</strong></h4>
+			</div>
+			<div class="col-md-9 col-sm-8 col-xs-12">
+				{% include donors.html %}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Our Partners end -->
