@@ -10,8 +10,6 @@ main:
         url: '/about/the-kids/'
       - text: 'The Team'
         url: '/about/the-team/'
-      - text: 'CCC Worldwide'
-        url: '/about/ccc-worldwide/'
   - text: 'What We Do'
     url: '/what-we-do/'
   - text: 'Get Involved'

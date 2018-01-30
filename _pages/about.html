@@ -9,9 +9,35 @@ permalink: "/about/"
 	<div class="row">
 		<div class="col-md-9 col-sm-8 col-xs-12">
 			<h3>Our Vision</h3>
-			<p>CCC strives for a safe and just environment for most vulnerable South Sudanese children, youth and women.</p>
+			<p>Confident Children out of Conflict (CCC) strives for a safe and just environment for most vulnerable South Sudanese children, youth and women.</p>
+			
 			<h3>Our Mission</h3>
 			<p>As a Christian Organization, CCC commits to fulfill Mathew 25:35-45 by advocating for rights and caring for most vulnerable children, youth and women through community outreach, education support, skills development and care home</p>
+
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h2>Our Core Values</h2>
+				</div>
+			</div>
+				{% for value in site.data.values %}
+				{%  assign i = 0 | plus: 1 %}
+				{% if !i || i % 2 == 1 % } <div class="row"> {% endif %}
+				<div class="col-sm-6 col-xs-12">
+					<section class="dsp-flex flex-start">
+						<div class="pull-left">
+							<div class="icon-holder dsp-flex">
+								<img alt="" src="assets/icons/icon_09.png">
+							</div>
+						</div>
+						<div class="pull-right">
+							<h3>{{ value.title }}</h3>
+							<p>{{ value.description }}</p>
+						</div>
+					</section>
+				</div>		
+				{% if i % 2 == 1 % } <div class="row"> {% endif %}	
+				{% endfor %}
+			</div>
 
 			<p>Cathy Groenendijk has been the driving force behind CCC, delivering services, support and safety to children of South Sudan (formerly Sudan) from 2007 when the organisation was founded. With a team of highly committed South Sudanese volunteers and staff, Cathy is able to continue providing a safe space for children affected by protracted crises in the country, including the most recent conflict, which broke out in 2013.</p>
 
