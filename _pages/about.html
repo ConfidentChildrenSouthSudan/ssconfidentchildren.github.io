@@ -19,9 +19,8 @@ permalink: "/about/"
 					<h2>Our Core Values</h2>
 				</div>
 			</div>
+			<div class="row">
 				{% for value in site.data.values %}
-				{%  assign i = 0 | plus: 1 %}
-				{% if !i || i % 2 == 1 % } <div class="row"> {% endif %}
 				<div class="col-sm-6 col-xs-12">
 					<section class="dsp-flex flex-start">
 						<div class="pull-left">
@@ -34,8 +33,7 @@ permalink: "/about/"
 							<p>{{ value.description }}</p>
 						</div>
 					</section>
-				</div>		
-				{% if i % 2 == 1 % } <div class="row"> {% endif %}	
+				</div>
 				{% endfor %}
 			</div>
 
