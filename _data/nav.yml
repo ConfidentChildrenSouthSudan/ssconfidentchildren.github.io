@@ -14,9 +14,7 @@ main:
     url: '/what-we-do/'
   - text: 'Get Involved'
     url: '#'  
-    subitems: 
-      - text: 'Partners'
-        url: '/get-involved/partners/'      
+    subitems:     
       - text: 'Donate'
         url: '/get-involved/donations/'
       - text: 'Volunteer'

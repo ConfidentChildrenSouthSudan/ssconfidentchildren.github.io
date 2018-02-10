@@ -26,7 +26,22 @@
     <![endif]-->
 </head>
 <body>
-    <div class="hero-banner-wrapper"> 
+    {% if page.about  %}
+        {% assign wrapper_class =  'about-banner'%}
+    {% elsif page.causes  %}
+        {% assign wrapper_class =  'causes-banner'%}
+    {% elsif page.contact  %}
+        {% assign wrapper_class =  'contact-banner'%}
+    {% elsif page.about  %}
+        {% assign wrapper_class =  'about-banner'%}    
+    {% elsif page.faqs  %}
+        {% assign wrapper_class =  'faqs-banner'%}
+    {% elsif page.involved  %}
+        {% assign wrapper_class =  'get-involved-banner'%}
+    {% else %}
+        {% assign wrapper_class =  'hero-banner'%}
+    {% endif %}
+    <div class="banner-wrapper {{ wrapper_class }}"> 
         <!-- Header -->
         <header class="header">
             <div class="container">
@@ -74,7 +89,7 @@
         <div class="yellow-bg-wrapper pad22">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12"> <span class="volunter">LET'S START DOING YOUR BIT FOR CCC. JOIN US AS A VOLUNTEER</span> <a href="#" class="global-btn">BECOME A VOLUNTEER</a> </div>
+                    <div class="col-xs-12"> <span class="volunter">LET'S START DOING YOUR BIT FOR CCC. JOIN US AS A VOLUNTEER</span> <a href="/get-involved/volunteers/" class="global-btn">BECOME A VOLUNTEER</a> </div>
                 </div>
             </div>
         </div>

@@ -1,43 +1,3 @@
-/*================================
- *Author:RSACreative
- *Template:Fundomy
- *Version:1.0
- *================================
- */
-
-/*==========Table of Content==========
-
- 01. Imported styles
- 02. Global styles
- 03. Header styles
- 04. Footer style
- -01. footer Top Section
- -02. footer Bottom Section
- 05. Index Page
- 06. Inner Pages
- -01. Causes
- -02. Team
- -03. Career
- -04. About
- -05. Blog
- -06. Blog-Deatils
- -07. Blog-List
- -08. Cause-List
- -09. Cause-Grid
- -10. Event Grid
- -11. Event List
- -12. Conact us
- -13. Gallery 2 cols
- -14. Gallery 4 cols
- -15. Shop
-
- ==========End Table of Content==========*/
-
-/*==========1. Imported styles==========*/
-
-
-/*==========2. Global styles==========*/
-
 body {
   font-family: 'Lato', sans-serif;
   color: #545454;
@@ -657,12 +617,19 @@ img {
 .heading-group h3 {
   margin: 0 0
 }
-.hero-banner-wrapper {
+.banner-wrapper {
   background-color: #fff;
-  background-image: url(../img/slider/slider-4.jpg);
   background-repeat: no-repeat;
   background-position: center top;
 }
+
+.hero-banner { background-image: url(../img/slider/slider-4.jpg); }
+.about-banner { background-image: url(../img/slider/slider-4.jpg); }
+.get-involved-banner { background-image: url(../img/slider/slider-4.jpg); }
+.causes-banner { background-image: url(../img/slider/slider-4.jpg); }
+.contact-banner { background-image: url(../img/slider/slider-4.jpg); }
+.faqs-banner { background-image: url(../img/slider/slider-4.jpg); }
+
 .light-waight {
   font-weight: 300;
 }
